@@ -7,7 +7,7 @@ var (
 		Use:   "driedel",
 		Short: "A command line to run a driedel game from your terminal!",
 		Long: `Driedel is a command line that lets you run the Hanukah driedel game from an
-interactive terminal.`,
+interactive terminal`,
 	}
 )
 
