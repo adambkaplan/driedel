@@ -3,6 +3,7 @@ package driedel
 import (
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 type SpinResult int
@@ -33,9 +34,9 @@ type Driedel struct {
 	randomizer *rand.Rand
 }
 
-// NewDriedel creates a new Driedel with a random initial seed.
+// NewDriedel creates a new Driedel with the current UNIX time in nanoseconds as the initial seed.
 func NewDriedel() *Driedel {
-	return NewDriedelWithSeed(rand.Int63())
+	return NewDriedelWithSeed(time.Now().UnixNano())
 }
 
 // NewDriedelWithSeed creates a new Driedel with the provided seed for the random number generator.
