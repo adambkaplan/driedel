@@ -11,6 +11,10 @@ interactive terminal`,
 	}
 )
 
+func init() {
+	rootCmd.AddCommand(spinCmd)
+}
+
 func Execute() error {
 	return rootCmd.Execute()
 }

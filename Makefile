@@ -13,4 +13,4 @@ test-unit:
 	go test ./...
 
 test-cli: build
-	test/bats/bin/bats test/root.bats
+	test/bats/bin/bats test/
